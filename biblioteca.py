@@ -3,7 +3,7 @@ from datetime import date
 
 
 class Libro:
-    def _init_(self, isbn: str, titulo: str, autor: str):
+    def __init__(self, isbn: str, titulo: str, autor: str):
         
         self.isbn = isbn
         self.ISBN = isbn
@@ -22,7 +22,7 @@ class Libro:
 
 
 class Estudiante:
-    def _init_(self, codigo_estudiante: str, nombres: str, apellidos: str):
+    def __init__(self, codigo_estudiante: str, nombres: str, apellidos: str):
        
         self.codigo_estudiante = codigo_estudiante
         self.codigoEstudiante = codigo_estudiante  
@@ -41,7 +41,7 @@ class Estudiante:
 
 
 class Prestamo:
-    def _init_(self, id_prestamo: int, id_libro: str, codigo_estudiante: str,
+    def __init__(self, id_prestamo: int, id_libro: str, codigo_estudiante: str,
                  fecha_prestamo: date, fecha_devolucion: date):
         
         self.id_prestamo = id_prestamo
@@ -77,7 +77,7 @@ class Prestamo:
 
 
 class Biblioteca:
-    def _init_(self):
+    def __init__(self):
         self.libros: List[Libro] = []
         self.estudiantes: List[Estudiante] = []
         self.prestamos: List[Prestamo] = []

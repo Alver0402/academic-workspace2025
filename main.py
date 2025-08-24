@@ -2,9 +2,6 @@ from biblioteca import Biblioteca, Libro, Estudiante, Prestamo
 from datetime import datetime
 import biblioteca as _biblioteca  
 
-
-print(f"[DEBUG] archivo biblioteca cargado desde: {_biblioteca.__file__}")
-
 def mostrar_menu():
     print("\n========= 📚 MENÚ BIBLIOTECA =========")
     print("1. Agregar libro")
@@ -97,5 +94,6 @@ def main():
             print("⚠️ Opción no válida, intente de nuevo.")
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
+
     main()
